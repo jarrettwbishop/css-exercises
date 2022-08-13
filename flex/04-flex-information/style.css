@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 body {
   font-family: 'Courier New', Courier, monospace;
 }
@@ -10,6 +16,19 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  text-align: center;
+  margin: 8px 8px 32px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+li {
+  width: 200px;
+  margin: 0 52px;
 }
 
 /* do not edit this footer */
