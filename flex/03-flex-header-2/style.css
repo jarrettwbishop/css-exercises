@@ -2,6 +2,10 @@
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   background: #eee;
@@ -12,6 +16,17 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+.left,
+.right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .profile-image {
@@ -35,14 +50,22 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  margin: 0 16px;
 }
 
 a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  margin: 0 16px; 
 }
 
 ul {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 16px;
 }
+
