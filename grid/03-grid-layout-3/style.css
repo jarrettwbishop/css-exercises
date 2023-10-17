@@ -89,3 +89,69 @@
   font-size: 13px;
   font-weight: normal;  
 }
+
+/* Solution */
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 3fr 3fr 3fr;
+  grid-template-rows: 1fr .25fr 10fr .25fr;
+  gap: 5px;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+.header {
+  grid-area: 1 / 1 / 2 / 5;
+  display: grid;
+  grid-template-columns: 3fr 5fr ;
+  text-align: left;
+}
+.menu,
+.logo {
+  display: grid;
+  grid-template-rows: 1;
+  align-items: center;
+}
+.header ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+
+
+.sidebar {
+  grid-area: 2 / 1 / 4 / 2;
+  display: grid;
+  gap: 50px
+}
+
+.side-content,
+.photo {
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.nav {
+  grid-area: 2 / 2 / 3 / 5;
+}
+
+.nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.article {
+  grid-area: 3 / 2 / 4 / 5;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.footer {
+  grid-area: 4 / 1 / 5 / 5;
+
+}
